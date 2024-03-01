@@ -1,6 +1,7 @@
 import streamlit as st
 import networkx as nx
 from graph_functions import output_nodes_and_edges,count_nodes
+
 def store_graph():
     with st.expander("Show individual lists"):
         st.json(st.session_state["node_list"], expanded=True)
